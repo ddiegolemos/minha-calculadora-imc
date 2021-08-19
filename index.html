@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calculadora de IMC</title>
+    <meta name="description" content="Uma calculadora de IMC para você" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/home.css"
+    />
+    <script src="script/script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav role="navigation">
+        <div class="logo">
+          <a href="/index.html">
+            <img
+              src="imagens/logo3-1.png"
+              alt="logotipo da minha empresa"
+              width="50px"
+            />
+          </a>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="oq-e-imc.html">O que é IMC?</a>
+          </li>
+          <li>
+            <a href="quem-somos.html">Sobre nós</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container">
+        <h1 class="text-color-secondary">Calculadora de IMC</h1>
+        <section class="form-wraper">
+          <form name="calculo_imc">
+            <div>
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Ex: João Silva"
+                  name="nome"
+                  id="nome"
+                  required="required"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="peso">Peso</label>
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    type="number"
+                    placeholder="Ex: 60"
+                    name="peso"
+                    id="peso"
+                    required="required"
+                    min="0,01"
+                    max="800"
+                  />
+                  <span class="input-group-add-on">Kg</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="altura">Altura</label>
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    type="number"
+                    placeholder="Ex: 1.75"
+                    name="altura"
+                    id="altura"
+                    required="required"
+                    step="0.01"
+                    min="0.01"
+                    max="3"
+                  />
+                  <span class="input-group-add-on">m</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="form-group">
+                <label for="" class="label-group">Mostrar nome</label>
+                <div>
+                  <label for="mostrar_nome">
+                    <input type="radio" name="mostrar_nome" value="0" checked />
+                    Sim
+                  </label>
+                </div>
+
+                <div>
+                  <label for="mostrar_nome">
+                    <input
+                      type="radio"
+                      name="mostrar_nome"
+                      id="mostrar_nome"
+                      value="1"
+                    />
+                    Não
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="">Mostrar Condição Física</label>
+                <select
+                  class="form-control"
+                  name="mostrar_condicao_fisica"
+                  id="mostrar_condicao_fisica"
+                >
+                  <option selected value="0">Sim</option>
+                  <option value="1">Não</option>
+                </select>
+              </div>
+            </div>
+            <input
+              type="submit"
+              name="calcular_imc"
+              id="calcular_imc"
+              value="Calcular IMC"
+              class="button button-primary"
+            />
+            <input
+              type="reset"
+              name="limpar"
+              id="limpar"
+              value="Limpar"
+              class="button button-secondary"
+            />
+          </form>
+          <p id="mostrar_imc"></p>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>Todos os direitos reservados - 2021</p>
+    </footer>
+  </body>
+</html>

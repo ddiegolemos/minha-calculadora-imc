@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  background-color: #758ECD ;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 15px;
+  
+}
+
+header nav {
+  background-color: #624CAB;
+  display: flex;
+}
+
+header li a:hover {
+  background-color: #758ECD ;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-color-primary {
+  color: black;
+}
+
+#oque_e_imc {
+  font-size: 110%;
+  line-height: 110%;
+}
+
+.text-color-secondary {
+  color: white;
+}
+
+
+.wraper {
+  padding: 15px;
+  background-color: white;
+  width: 30%;
+  border-radius: 4px;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  color: white;
+  background-color: #624CAB;
+  width: 100%;
+  justify-content: center;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 980px) {
+  .form-wraper {
+    width: 80%;
+  }
+}
