@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+hmtl, body {height: 100}
+
 body {
   font-family: "Montserrat";
   margin: 0;
@@ -140,8 +142,8 @@ label {
   font-size: 110%;
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 950px) {
   .form-wraper {
-    width: 80%;
+    width: 100%;
   }
 }

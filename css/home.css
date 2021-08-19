@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+hmtl, body {height: 100}
+
 body {
   font-family: "Montserrat";
   margin: 0;
