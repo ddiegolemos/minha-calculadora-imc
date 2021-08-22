@@ -72,19 +72,24 @@ header li a:hover {
 .wraper {
   padding: 15px;
   background-color: white;
-  width: 30%;
+  width: 60%;
   border-radius: 4px;
 }
 
 
 footer {
-  position: absolute;
-  bottom: 0;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
   color: white;
   background-color: #624CAB;
-  width: 100%;
-  justify-content: center;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
 }
 
 label {
@@ -93,7 +98,22 @@ label {
 }
 
 @media only screen and (max-width: 950px) {
-  .form-wraper {
+  .wraper {
     width: 100%;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    color: white;
+    background-color: #624CAB;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
   }
 }
